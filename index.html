@@ -343,7 +343,7 @@
         <div class="linea"></div>
 
         <!-- FECHA ILUMINADA -->
-        <div class="fecha" id="fechaHoy">✨ ... ✨</div>
+        <div class="fecha">16 de septiembre 2026✨</div>
 
         <!-- MENSAJE -->
         <div class="mensaje">
@@ -479,11 +479,10 @@
 
     <script>
         // Fecha de hoy iluminada
-        const meses = ['enero','febrero','marzo','abril','mayo','junio','julio',
-                       'agosto','septiembre','octubre','noviembre','diciembre'];
+        const meses = ['septiembre'];
         const hoy = new Date();
-        document.getElementById('fechaHoy').textContent =
-            '✨ ' + hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear() + ' ✨';
+       document.getElementById('fechaHoy').textContent =
+            hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear();
 
         // Abrir cuadros de flores
         function abrirCuadro(cuadro) {
