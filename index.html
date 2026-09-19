@@ -317,7 +317,7 @@
     <!-- MÚSICA: pon el nombre de tu archivo de música donde dice src -->
     <!-- Ejemplo: src="nuestra_cancion.mp3"  (la música debe estar en la misma carpeta) -->
     <audio id="musica" autoplay loop>
-        <source src="Lord Huron - The Night We Met (Official Lyric Video).mp3" type="audio/mpeg">
+        <source src="Lord%20Huron%20-%20The%20Night%20We%20Met%20(Official%20Lyric%20Video).mp3" type="audio/mpeg">
     </audio>
 
     <!-- Corazones flotando -->
@@ -363,7 +363,7 @@
             <p>
                 Quema recordar
                 los planes, las promesas,
-                las cosas que hariamos,
+                las cosas que harías,
                 los sueños que imaginamos
                 como si fueran eternos.
             </p>
@@ -478,12 +478,6 @@
     </footer>
 
     <script>
-        // Fecha de hoy iluminada
-        const meses = ['septiembre'];
-        const hoy = new Date();
-       document.getElementById('fechaHoy').textContent =
-            hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear();
-
         // Abrir cuadros de flores
         function abrirCuadro(cuadro) {
             cuadro.classList.toggle('abierto');
